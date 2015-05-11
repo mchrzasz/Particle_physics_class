@@ -1,0 +1,168 @@
+% Please name the set of problems ubgXX.tex, and the solutions lsgXX.tex, where XX is the number
+
+\documentclass[11pt]{article}
+\usepackage[german]{babel}
+\usepackage{epsfig,graphicx}
+\usepackage{amsmath}
+%\usepackage{axodraw}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{xspace, amsmath}
+\usepackage{hepparticles}
+\usepackage{hepunits}
+\usepackage{slashed}
+%\usepackage{txfonts, pxfonts}
+\textheight 240mm
+\textwidth 168mm
+\topmargin -1.5cm
+\oddsidemargin -4mm
+\evensidemargin -4mm
+\pagestyle{empty}
+\parindent 0mm
+
+% Commands for typesetting of the exercises/solutions: please do not edit them
+\newenvironment{questions}{\begin{list}{\alph{enumi})}{\usecounter{enumi}\leftmargin6mm}}{\end{list}}
+\newcounter{exercise}
+\newcommand{\exercise}[1]{\vspace{0.5cm}\stepcounter{exercise} \noindent {\large {\bf \arabic{exercise}. #1}}\\[1mm] }
+%\newcommand{\serie}[2]{\noindent{{\bf \mbox{Exercises for Kern- und Teilchenphysik II --- Prof.\,F.\,Canelli, Prof\,N.\,Serra--- \\Spring term 2015 - Exercise sheet 1}}}\\
+\newcommand{\serie}[2]{ \bf{Exercises for Kern- und Teilchenphysik II} \\ Prof.\,F.\,Canelli, Prof\,N.\,Serra \\Spring term 2015 - Exercise sheet 5\\
+\rule{\linewidth}{0.3mm} \\ \noindent{\it Issued: 27 February 2015\\ Due: 5 March 2015  \\Discussion: 5 March 2015  }\\[2mm]
+ }
+\newcommand{\solutions}[1]{\noindent{ {\bf \mbox{Einf\"uhrung in die Kern- und Teilchenphysik --- Prof.\,K.\,Kirch --- Serie #1}}}\\\rule{\linewidth}{0.5mm} \noindent{\it L\"osungen }\\[2mm]}
+
+
+% The following commands are defined for your convenience, they work in both math and text mode
+\def\epem{\ensuremath{\mathrm{e^+e^-}}}      % e+e-
+\def\TeV{\ensuremath{\mathrm{\ Te\kern -0.1em V}}} % TeV in correct typesetting
+\def\GeV{\ensuremath{\mathrm{\ Ge\kern -0.1em V}}} % GeV in correct typesetting
+\def\MeV{\ensuremath{\mathrm{\ Me\kern -0.1em V}}} % MeV in correct typesetting
+\def\keV{\ensuremath{\mathrm{\ ke\kern -0.1em V}}} % keV in correct typesetting
+\def\eV{\ensuremath{\mathrm{\ e\kern -0.1em V}}} % eV in correct typesetting
+\def\tev{\TeV{}} % same as above, for convenience
+\def\gev{\GeV{}}
+\def\mev{\MeV{}}
+\def\kev{\keV{}}
+\def\ev{\eV{}}
+\def\Wp{\ensuremath{\mathrm {W^+}}} % W+ boson
+\def\Wm{\ensuremath{\mathrm {W^-}}} % W- boson
+\def\ra{\ensuremath{\rightarrow}} %  "GOES TO" arrow for reactions
+\def\rts {\ensuremath{\sqrt{s}}} % square root of s
+\newcommand{\La}{\ensuremath{\mathcal{L}}}  % Luminosity
+\newcommand{\p}{\ensuremath{\partial}} %
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Uncomment the appropriate line:
+%
+%\serie{1}{}  % insert (1) problem set number and (2) deadline here
+%\serie{1}{1./3./4. M\"{a}rz 2011}  % insert (1) problem set number and (2) deadline here
+%
+%\solutions{1}  % insert solutions number here
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%\begin{minipage}
+%\fontsize{14pt}{12pt}\fontsize{10pt}{12pt}
+\large
+\textbf{
+\centerline{Kern- und Teilchenphysik II}\\
+\centerline{Spring Term 2015}\\
+%\centerline{Prof.\,F.\,Canelli  Prof\,N.\,Serra}
+\\
+\Large \centerline{Exercise Sheet 8}
+\\\\
+}
+
+\large
+Lecturers: Prof.\,F.\,Canelli,  Prof.\,N.\,Serra\\
+Assistants: Dr. M.\,Chrzaszcz, Dr. A.de Cosa
+
+%Assistants: B. Casal Lara\~na, Dr. M. Doneg\`a, L. Tancredi, A. Torre\\
+%\verb+https://moodle-app2.let.ethz.ch/course/view.php?id=1064+
+%\end{minipage}
+\normalsize
+
+Issued: 11 May 2015 \\
+Due: 22 May 2015  \\ 
+Discussion: 22 May 2015 \\
+
+\exercise{Helicity suppression}
+
+Calculate the branching fractions of the decay of $K^- \to \mu^- \bar{\nu}_{\mu}$ and $K^- \to e^- \bar{\nu}_{e}$. Compare the ratio to the experimental measured one.
+\begin{flushright}
+1 pt
+\end{flushright}
+
+\exercise{CKM matrix}
+
+Show that if the CKM matrix is unitary the GIM mechanism for eliminating the $K^0 \to \mu \mu$ works for any number of generations.
+\begin{flushright}
+3 pt
+\end{flushright}
+Draw a Feyman diagram that allows the production of $K \to \mu \mu$, $B_s \to \mu \mu$.
+\begin{flushright}
+1 pt
+\end{flushright}
+How many independent parameters are there in a general $3 \times 3$ unitary matrix.
+\begin{flushright}
+2 pt
+\end{flushright}
+Generalize the solution to $n \times n$ unitary matrix.
+\begin{flushright}
+1 pt
+\end{flushright}
+Can you reduce the CKM matrix to only real elements? What if we would have just 2 generations of quarks?
+\begin{flushright}
+3 pt
+\end{flushright}
+
+Lets parametrize the CKM matrix using $\theta_{12}$, $\theta_{23}$, $\theta_{13}$, $\delta$. Show that for any real values of this parameters the matrix is unitary.
+\begin{flushright}
+3 pt
+\end{flushright}
+
+
+\exercise{$Z$ boson}
+Predict in the mass of $Z$ and $W$ bosons in Glashow-Weinberg-Salam model. Experimental values for $G_F$ and $\theta_W$ take from PDG 2014. Was it possible to predict this masses before the LEP?
+\begin{flushright}
+2 pt
+\end{flushright}
+Calculate the decay rates for $Z^0 \to f \bar{f}$, where $f$ is any fermion. Assume $m_f<<m_Z$. [Hint: use completeness relation.]
+\begin{flushright}
+5 pt
+\end{flushright}
+
+Give the branching fraction (numerical values) for each of the decay modes valid for your above formula.
+\begin{flushright}
+2 pt
+\end{flushright}
+Calculate the ration of: $\dfrac{e^+ e^- \to Z \to \rm{hadrons}}{e^+ e^- \to Z \to \mu \mu}$.
+\begin{flushright}
+1 pt
+\end{flushright}
+
+
+
+\exercise{$\tau$ life time 2}
+In sheet 5 we estimated $\tau$ lepton life time using leptonic decays of $\tau$. Please repeat the exercise including: $\tau \to d \bar{u} \nu_{\tau}$ and    $\tau \to s \bar{u} \nu_{\tau}$. Compare to experimental values.
+\begin{flushright}
+3 pt
+\end{flushright}
+
+
+\iffalse
+\exercise{Electron neutrino scattering}
+
+Calculate the differential and total cross section for $e^- bar{nu}_{\mu} \to e^- bar{nu}_{\mu}$ in  Glashow-Weinberg-Salam model.
+\begin{flushright}
+5 pt
+\end{flushright}
+Is the calculation the same for: $e^- bar{nu}_{e} \to e^- bar{nu}_{e}$?
+\begin{flushright}
+1 pt
+\end{flushright}
+\fi
+
+\end{document}
